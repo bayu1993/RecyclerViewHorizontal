@@ -38,7 +38,7 @@ public class Car {
 
     public static List<Car> generateData(){
         List<Car> cars = new ArrayList<>();
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 20; i++){
             Car car = new Car();
             car.setId(i);
             car.setMerk("Toyota "+i);
