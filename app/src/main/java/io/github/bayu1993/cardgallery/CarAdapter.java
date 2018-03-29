@@ -12,10 +12,10 @@ import java.util.List;
  */
 
 public class CarAdapter extends RecyclerView.Adapter<CarViewHolder> {
-    private final List<Car> mCars;
+    private final List<Car> CARSLIST;
 
     public CarAdapter(List<Car> cars) {
-        mCars =cars;
+        CARSLIST =cars;
     }
 
     @Override
@@ -27,12 +27,12 @@ public class CarAdapter extends RecyclerView.Adapter<CarViewHolder> {
 
     @Override
     public void onBindViewHolder(CarViewHolder holder, int position) {
-        Car car = mCars.get(position);
+        Car car = CARSLIST.get(position);
         holder.showData(car);
     }
 
     @Override
     public int getItemCount() {
-        return mCars.size();
+        return CARSLIST.size();
     }
 }
